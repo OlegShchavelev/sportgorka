@@ -296,10 +296,11 @@
 </div>
 
 
-{'!msProducts' | snippet : [
+{'!preWrapper' | snippet : [
 'parents' => $_modx->resource.parent,
 'where' => ['template:IN' => ['3','18']],
-'tplWrapper' => 'tpl.outer.similar',
+'resources' => '-' ~ ('id' | resource),
+'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
 'includeTVs' => 'prod_x_nalichie',
 'tpl' => 'product_tpl_1',
 'limit' => 4,
@@ -308,14 +309,18 @@
 'addPlaceholders' => [
 'colClass' => 'col-xs-3'
 ],
+'wrapperPlaceholders' => [
+'title' => 'Похожие товары'
+]
 'tvPrefix' => '',
 'wrapIfEmpty' => 0
 ]}
 
-{'!msProducts' | snippet : [
+{'!preWrapper' | snippet : [
 'parents' => 279,
 'where' => ['template:IN' => ['3','18']],
-'tplWrapper' => 'tpl.outer.sale',
+'resources' => '-' ~ ('id' | resource),
+'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
 'includeTVs' => 'prod_x_nalichie',
 'tpl' => 'product_tpl_1',
 'limit' => 4,
@@ -324,6 +329,29 @@
 'addPlaceholders' => [
 'colClass' => 'col-xs-3'
 ],
+'wrapperPlaceholders' => [
+'title' => 'Распродажа'
+]
+'tvPrefix' => '',
+'wrapIfEmpty' => 0
+]}
+
+{'!preWrapper' | snippet : [
+'parents' => 28,
+'where' => ['template:IN' => ['3','18']],
+'resources' => '-' ~ ('id' | resource),
+'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
+'includeTVs' => 'prod_x_nalichie',
+'tpl' => 'product_tpl_1',
+'limit' => 4,
+'sortby' => 'RAND()',
+'prepareSnippet' => 'addPlaceholders',
+'addPlaceholders' => [
+'colClass' => 'col-xs-3'
+],
+'wrapperPlaceholders' => [
+'title' => 'Резиновые покрытия'
+]
 'tvPrefix' => '',
 'wrapIfEmpty' => 0
 ]}
