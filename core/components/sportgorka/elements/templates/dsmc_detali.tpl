@@ -308,26 +308,6 @@
 'wrapIfEmpty' => 0
 ]}
 
-{'!preWrapper' | snippet : [
-'parents' => 28,
-'where' => ['template:IN' => ['3','18']],
-'resources' => '-' ~ ('id' | resource),
-'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
-'includeTVs' => 'prod_x_nalichie',
-'tpl' => 'product_tpl_1',
-'limit' => 4,
-'sortby' => 'RAND()',
-'prepareSnippet' => 'addPlaceholders',
-'addPlaceholders' => [
-'colClass' => 'col-xs-3'
-],
-'wrapperPlaceholders' => [
-'title' => 'Резиновые покрытия'
-]
-'tvPrefix' => '',
-'wrapIfEmpty' => 0
-]}
-
 
 {include 'dsmc_footer'}
 {include 'dsmc_scripts'}
