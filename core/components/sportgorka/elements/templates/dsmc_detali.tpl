@@ -30,9 +30,9 @@
             <div class="product_page row">
                 <div class="col-xs-9 product_image">
                     <div class="items-images-tovaras">
-                        {'new' | resource == 1 ? '<span class="hit"><img src="css/images/star.png" alt="Хит продаж" title="Хит продаж" width="50" height="50"><span class="text">Хит продаж</span></span>' : ''}
-                        {'popular' | resource == 1 ? '<span class="def"><img src="css/images/def.png" alt="Антивандальная конструкция" title="Антивандальная конструкция" width="50" height="50"><span class="text">Антивандальная конструкция</span></span>' : ''}
-                        {'favorite' | resource == 1 ? '<span class="rub"><img src="css/images/rub.png" alt="Лучшая цена" title="Лучшая цена" width="50" height="50"><span class="text">Лучшая цена</span></span>' : ''}
+                        {'new' | resource == 1 ? '<a href="' ~ ('485' | url) ~ '"><span class="hit"><img src="css/images/star.png" alt="Хит продаж" title="Хит продаж" width="50" height="50"><span class="text">Хит продаж</span></span></a>' : ''}
+                        {'popular' | resource == 1 ? '<a href="' ~ ('459' | url) ~ '"><span class="def"><img src="css/images/def.png" alt="Антивандальная конструкция" title="Антивандальная конструкция" width="50" height="50"><span class="text">Антивандальная конструкция</span></span></a>' : ''}
+                        {'favorite' | resource == 1 ? '<a href="' ~ ('486' | url) ~ '"><span class="rub"><img src="css/images/rub.png" alt="Лучшая цена" title="Лучшая цена" width="50" height="50"><span class="text">Лучшая цена</span></span></a>' : ''}
                     </div>
 
                     {'!msGallery' | snippet : [
