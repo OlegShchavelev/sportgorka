@@ -1,5 +1,4 @@
 <?php
-
 // Добавляем плейсхолдер для передачи данных в
 
 $modx->setPlaceholders($wrapperPlaceholders,'dsmc_wrapper_');

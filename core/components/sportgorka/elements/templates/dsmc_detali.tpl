@@ -91,7 +91,7 @@
                                         <div class="product_info_common_text">Доставим вашу площадку в любое место Петербурга и Ленинградской области</div>
                                         <div class="product_info_common_subtitle">Самовывоз</div>
                                         <div class="product_info_common_text">Вы можете сами забрать свой заказ с нашего производства</div>
-                                        <a href="[[~22]]" rel="nofollow">Подробнее о доставке</a>
+                                        <a href="[[~22]]" rel="nofollow" title="Подробнее о доставке">Подробнее о доставке</a>
                                     </div>
                                 </div>
                                 <div class="col-xs-5">
@@ -102,7 +102,7 @@
                                         <div class="product_info_common_text">— 12% от стоимости на комплексы дороже 100000 рублей</div>
                                         <div class="product_info_common_subtitle">Общественные территории</div>
                                         <div class="product_info_common_text">18% от стоимости комплекса, но не менее 6000 рублей</div>
-                                        <a href="[[~21]]" rel="nofollow" style="margin-top:10px">Подробнее о монтаже</a>
+                                        <a href="[[~21]]" rel="nofollow" style="margin-top:10px" title="Подробнее о монтаже">Подробнее о монтаже</a>
                                     </div>
                                 </div>
                                 <div class="col-xs-5">
@@ -180,7 +180,7 @@
                                     <div class="product_info_common_text">Доставим вашу площадку в любое место Петербурга и Ленинградской области</div>
                                     <div class="product_info_common_subtitle">Самовывоз</div>
                                     <div class="product_info_common_text">Вы можете сами забрать свой заказ с нашего производства</div>
-                                    <a href="[[~22]]" rel="nofollow">Подробнее о доставке</a>
+                                    <a href="[[~22]]" rel="nofollow" title="Подробнее о доставке">Подробнее о доставке</a>
                                 </div>
                             </div>
                             <div class="col-xs-5">
@@ -191,7 +191,7 @@
                                     <div class="product_info_common_text">— 12% от стоимости на комплексы дороже 100000 рублей</div>
                                     <div class="product_info_common_subtitle">Общественные территории</div>
                                     <div class="product_info_common_text">18% от стоимости комплекса, но не менее 6000 рублей</div>
-                                    <a href="[[~21]]" rel="nofollow" style="margin-top:10px">Подробнее о монтаже</a>
+                                    <a href="[[~21]]" rel="nofollow" style="margin-top:10px" title="Подробнее о монтаже">Подробнее о монтаже</a>
                                 </div>
                             </div>
                             <div class="col-xs-5">
