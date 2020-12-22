@@ -240,6 +240,7 @@
         'tpl' => 'dsmc.tpl.seoTabs',
         'tplTab' => 'dsmc.tpl.seoTabsTab',
         'tplTabContent' => 'dsmc.tpl.seoTabsContent'
+        'ajax' => 1
         ]}
 
 
