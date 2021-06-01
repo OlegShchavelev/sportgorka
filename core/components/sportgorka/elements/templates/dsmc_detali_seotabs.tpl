@@ -245,13 +245,6 @@
 
 
 
-        <div class="container card_complect_tags">
-            <div class="row">
-                {'prod_komplektaciya' | tv | tagsLink }
-            </div>
-        </div>
-
-
     </div>
 </div>
 <div class="widebelt_fb_wr">
@@ -296,46 +289,6 @@
     </div>
 </div>
 
-
-{'!preWrapper' | snippet : [
-'parents' => $_modx->resource.parent,
-'where' => ['template:IN' => ['3','18']],
-'resources' => '-' ~ ('id' | resource),
-'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
-'includeTVs' => 'prod_x_nalichie',
-'tpl' => 'product_tpl_1',
-'limit' => 4,
-'sortby' => 'RAND()',
-'prepareSnippet' => 'addPlaceholders',
-'addPlaceholders' => [
-'colClass' => 'col-xs-3'
-],
-'wrapperPlaceholders' => [
-'title' => 'Похожие товары'
-]
-'tvPrefix' => '',
-'wrapIfEmpty' => 0
-]}
-
-{'!preWrapper' | snippet : [
-'parents' => 279,
-'where' => ['template:IN' => ['3','18']],
-'resources' => '-' ~ ('id' | resource),
-'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
-'includeTVs' => 'prod_x_nalichie',
-'tpl' => 'product_tpl_1',
-'limit' => 4,
-'sortby' => 'RAND()',
-'prepareSnippet' => 'addPlaceholders',
-'addPlaceholders' => [
-'colClass' => 'col-xs-3'
-],
-'wrapperPlaceholders' => [
-'title' => 'Распродажа'
-]
-'tvPrefix' => '',
-'wrapIfEmpty' => 0
-]}
 
 {'!preWrapper' | snippet : [
 'parents' => 28,
