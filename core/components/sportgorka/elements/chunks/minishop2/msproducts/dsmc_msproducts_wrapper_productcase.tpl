@@ -7,7 +7,7 @@
             <i class="fa fa-times" aria-hidden="true"></i>
         </span>
     </div>
-    <div class="index_product_row row">
+    <div class="index_product_row d-grid grid-template-columns-lg-4">
         {$output}
     </div>
 </div>

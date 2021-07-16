@@ -23,14 +23,14 @@ Ext.extend(miniShop2.page.CreateProduct, MODx.page.CreateResource, {
             var button = originals[i];
             switch (button.id) {
                 case 'modx-abtn-save':
-                    button.text = '<i class="icon icon-check"></i> ' + button.text;
+                    button.text = '<i class="icons icons-check"></i> ' + button.text;
                     break;
                 case 'modx-abtn-cancel':
-                    button.text = '<i class="icon icon-ban"></i> ' + button.text;
+                    button.text = '<i class="icons icons-ban"></i> ' + button.text;
                     button.handler = this.cancel;
                     break;
                 case 'modx-abtn-help':
-                    button.text = '<i class="icon icon-question-circle"></i>';
+                    button.text = '<i class="icons icons-question-circle"></i>';
                     break;
             }
             buttons.push(button)

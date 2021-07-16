@@ -24,22 +24,22 @@ Ext.extend(miniShop2.page.UpdateProduct, MODx.page.UpdateResource, {
             var button = originals[i];
             switch (button.id) {
                 case 'modx-abtn-save':
-                    button.text = '<i class="icon icon-save"></i> ' + button.text;
+                    button.text = '<i class="icons icons-save"></i> ' + button.text;
                     break;
                 case 'modx-abtn-delete':
-                    button.text = '<i class="icon icon-times"></i> ' + button.text;
+                    button.text = '<i class="icons icons-times"></i> ' + button.text;
                     break;
                 case 'modx-abtn-preview':
-                    button.text = '<i class="icon icon-eye"></i>';
+                    button.text = '<i class="icons icons-eye"></i>';
                     break;
                 case 'modx-abtn-duplicate':
-                    button.text = '<i class="icon icon-files-o"></i> ' + button.text;
+                    button.text = '<i class="icons icons-files-o"></i> ' + button.text;
                     break;
                 case 'modx-abtn-cancel':
                     continue;
                 case 'modx-abtn-help':
                     buttons.push(this.getAdditionalButtons(config));
-                    button.text = '<i class="icon icon-question-circle"></i>';
+                    button.text = '<i class="icons icons-question-circle"></i>';
                     break;
             }
             buttons.push(button)
@@ -50,20 +50,20 @@ Ext.extend(miniShop2.page.UpdateProduct, MODx.page.UpdateResource, {
 
     getAdditionalButtons: function (config) {
         return [{
-            text: '<i class="icon icon-arrow-left"></i>',
+            text: '<i class="icons icons-arrow-left"></i>',
             handler: this.prevPage,
             disabled: !config['prev_page'],
             scope: this,
             tooltip: _('ms2_btn_prev'),
             keys: [{key: 37, alt: true, scope: this, fn: this.prevPage}]
         }, {
-            text: '<i class="icon icon-arrow-up"></i>',
+            text: '<i class="icons icons-arrow-up"></i>',
             handler: this.cancel,
             scope: this,
             tooltip: _('ms2_btn_back'),
             keys: [{key: 38, alt: true, scope: this, fn: this.upPage}]
         }, {
-            text: '<i class="icon icon-arrow-right"></i>',
+            text: '<i class="icons icons-arrow-right"></i>',
             handler: this.nextPage,
             disabled: !config['next_page'],
             scope: this,

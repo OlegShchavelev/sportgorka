@@ -3,8 +3,6 @@
 <body class="template{'template' | resource} page{'id' | resource} body_mark2" itemscope itemtype="http://schema.org/WebPage">
 {include 'dsmc_header'}
 
-
-
 <div class="breadcrumbps_area">
     <div class="container">
         <div class="row">
@@ -40,15 +38,15 @@
     'snippet' => 'mFilter2',
     'element' => 'msProducts',
     'class' => 'msProduct',
-    'includeTVs' => 'prod_x_nalichie',
+    'includeTVs' => 'prod_x_nalichie, prod_child_count',
     'limit' => 21,
     'sort' => 'ms|price:asc',
-    'tpl' => 'product_tpl_1',
+    'tpl' => 'dsmc.msProducts.row',
     'prepareSnippet' => 'addPlaceholders',
     'addPlaceholders' => [
     'colClass' => 'col-xs-4'],
-    'tplOuter' => 'tpl.mFilter2.outer.detali',
-    'tplFilter.outer.default' => 'tpl.mFilter2.filter.outer.detali'
+    'tplOuter' => 'dsmc.mFilter2.outer',
+    'tplFilter.outer.default' => 'tpl.mFilter2.filter.outer.detali',
     'tplFilter.row.default' => 'tpl.mFilter2.filter.checkbox.detali'
     ]}
 </div>
@@ -65,7 +63,7 @@
         </div>
         <div class="index_product_row row">
 
-        {'!msProducts' | snippet : [
+{'!msProducts' | snippet : [
 'parents' => 0,
 'where' => ['Data.new' => 1],
 'tpl' => 'product_tpl_1',
