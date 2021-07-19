@@ -63,22 +63,21 @@
         </div>
         <div class="index_product_row row">
 
-{'!msProducts' | snippet : [
-'parents' => 0,
-'where' => ['Data.new' => 1],
-'tpl' => 'product_tpl_1',
-'limit' => 4,
-'sortby' => 'RAND()',
-'prepareSnippet' => 'addPlaceholders',
-'addPlaceholders' => [
-'colClass' => 'col-xs-3'
-]]}
+        {'!msProducts' | snippet : [
+        'parents' => 0,
+        'where' => ['Data.new' => 1],
+        'tpl' => 'product_tpl_1',
+        'limit' => 4,
+        'sortby' => 'RAND()',
+        'prepareSnippet' => 'addPlaceholders',
+        'addPlaceholders' => [
+        'colClass' => 'col-xs-3'
+        ]]}
 
         <div class="prod_hitsales_more_wr"><a href="{'485' | url}">Смотреть все хиты!</a></div>
     </div>
 </div>
 </div> ]] -->
-
 
 {include 'dsmc_footer'}
 {include 'dsmc_scripts'}

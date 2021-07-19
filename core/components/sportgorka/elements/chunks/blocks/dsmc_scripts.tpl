@@ -40,7 +40,11 @@
 
 {/if}
 
-<script src="assets/components/sportgorka/dist/js/theme.js"></script>
+<script src="assets/components/sportgorka/dist/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/components/sportgorka/dist/vendor/maska/maska.js"></script>
+<script src="assets/components/sportgorka/dist/vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+{$_modx->regClientScript('assets/components/sportgorka/dist/js/theme.js')}
+
 
 <!-- JavaScript files-->
 <script>
@@ -68,5 +72,3 @@
 </script>
 
 {'ym' | option}
-
-{$_modx->regClientScript("/assets/components/mvtforms2/js/web/dsmc.mvt2Forms2.js")}

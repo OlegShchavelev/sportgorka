@@ -74,14 +74,25 @@
                         </table>
                         <div class="product_info_price_wr" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                             <form class="ms2_form" method="post">
+                                <input type="hidden" name="count" id="product_price" class="form-control" value="1" />
+                                <input type="hidden" name="id" value="{'id' | resource}" />
                                 {if 'old_price' | placeholder != 0 ?}
                                     <div class="product_info_price_oldprice">{'old_price' | placeholder}</div>
                                 {/if}
+                                {if 'price' | placeholder != 0 }
                                 <div class="product_info_normalprice"><span content="1000.00"><span itemprop="price">{'price' | placeholder}</span></span> <span itemprop="priceCurrency" content="RUB">₽</span></div>
                                 <button type="submit" class="product_info_price_order" name="ms2_action" onclick="yaCounter45685119.reachGoal('ZAKAZ'); return true;" value="cart/add">В корзину</button>
-
-                                <input type="hidden" name="count" id="product_price" class="form-control" value="1" />
-                                <input type="hidden" name="id" value="{'id' | resource}" />
+                                    {else}
+                                    <div class="form-action mb-4">
+                                        <a href="#" class="btn btn-warning btn-lg btn-icon" role="button" data-toggle="modal" data-target="#bsModalRequest">
+                                        <span class="btn-icon-rounded mr-3">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="#icon-mail"></use>
+                                        </svg>
+                                            </span>
+                                            По запросу</a>
+                                    </div>
+                                {/if}
                             </form>
                         </div>
                         <div class="product_info_common">
@@ -174,11 +185,23 @@
                             {if 'old_price' | placeholder != 0 ?}
                                 <div class="product_info_price_oldprice">{'old_price' | placeholder}</div>
                             {/if}
+                            {if 'price' | placeholder != 0}
                             <div class="product_info_normalprice"><span content="1000.00"><span itemprop="price">{'price' | placeholder}</span></span> <span itemprop="priceCurrency" content="RUB">₽</span></div>
                             <button type="submit" class="product_info_price_order" name="ms2_action" onclick="yaCounter45685119.reachGoal('ZAKAZ'); return true;" value="cart/add">В корзину</button>
 
                             <input type="hidden" name="count" id="product_price" class="form-control" value="1" />
                             <input type="hidden" name="id" value="{'id' | resource}" />
+                                {else}
+                                <div class="form-action mb-4">
+                                    <a href="#" class="btn btn-warning btn-lg btn-icon" role="button" data-toggle="modal" data-target="#bsModalRequest">
+                                        <span class="btn-icon-rounded mr-3">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="#icon-mail"></use>
+                                        </svg>
+                                            </span>
+                                        По запросу</a>
+                                </div>
+                            {/if}
                         </form>
                     </div>
                     <div class="product_info_common">
