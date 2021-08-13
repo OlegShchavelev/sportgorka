@@ -39,7 +39,7 @@
     'element' => 'msProducts',
     'class' => 'msProduct',
     'includeTVs' => 'prod_x_nalichie, prod_child_count',
-    'limit' => 21,
+    'limit' => 27,
     'sort' => 'ms|price:asc',
     'tpl' => 'dsmc.msProducts.row',
     'prepareSnippet' => 'addPlaceholders',
