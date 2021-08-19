@@ -19,8 +19,6 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/extra_scripts.js"></script>
 
-
-
 {if 'template' | resource in list [18,3]}
     <script src="js/jquery.hc-sticky.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -40,9 +38,10 @@
 
 {/if}
 
-<script src="assets/components/sportgorka/dist/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/components/sportgorka/dist/vendor/maska/maska.js"></script>
-<script src="assets/components/sportgorka/dist/vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+<script src="{'assets_url' | option}components/sportgorka/dist/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{'assets_url' | option}components/sportgorka/dist/vendor/maska/maska.js"></script>
+<script src="{'assets_url' | option}components/sportgorka/dist/vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
 {$_modx->regClientScript('assets/components/sportgorka/dist/js/theme.js')}
 
 

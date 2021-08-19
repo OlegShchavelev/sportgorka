@@ -42,6 +42,7 @@
                     <div class="col-xs-3 product_info product_info_mobile">
                         <div class="product_info_maintitle">
                             <h1 itemprop="name">[[*pagetitle]]</h1>
+                            <div class="ya-share2" data-curtain data-shape="round" data-color-scheme="whiteblack" data-limit="4" data-services="vkontakte,facebook,odnoklassniki,telegram,viber,whatsapp"></div>
                         </div>
                         <table class="product_info_data">
                             <tbody>
@@ -150,6 +151,7 @@
                 <div class="col-xs-3 product_info hcSticky">
                     <div class="product_info_maintitle">
                         <h1 itemprop="name">{'pagetitle' | resource}</h1>
+                        <div class="ya-share2" data-curtain data-shape="round" data-color-scheme="whiteblack" data-limit="4" data-services="vkontakte,facebook,odnoklassniki,telegram,viber,whatsapp"></div>
                     </div>
                     <table class="product_info_data">
                         <tbody>

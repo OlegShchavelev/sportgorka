@@ -28,7 +28,9 @@
                     </li>
                 </ul>
             {/if}
-            <img src="{$image | pthumb : 'w=524&h=388&zc=1'}">
+            <a href="{$id | url}">
+                <img src="{$image | pthumb : 'w=524&h=388&zc=1'}">
+            </a>
         </div>
         <div class="product-body product-body-flex">
             <div class="product-title">
