@@ -301,7 +301,7 @@
 'parents' => $_modx->resource.parent,
 'where' => ['template:IN' => ['3','18']],
 'resources' => '-' ~ ('id' | resource),
-'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
 'includeTVs' => 'prod_x_nalichie',
 'tpl' => 'dsmc.msProducts.row',
 'limit' => 4,
@@ -321,7 +321,7 @@
 'parents' => 279,
 'where' => ['template:IN' => ['3','18']],
 'resources' => '-' ~ ('id' | resource),
-'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
 'includeTVs' => 'prod_x_nalichie',
 'tpl' => 'dsmc.msProducts.row',
 'limit' => 4,
@@ -331,7 +331,7 @@
 'colClass' => 'col-xs-3'
 ],
 'wrapperPlaceholders' => [
-'title' => 'Распродажа'
+'title' => 'Распродажа',
 ]
 'tvPrefix' => '',
 'wrapIfEmpty' => 0

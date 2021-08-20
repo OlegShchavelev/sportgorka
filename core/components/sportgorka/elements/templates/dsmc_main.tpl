@@ -322,129 +322,98 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="title_centered">
-        <h2>Лучшие проекты площадок</h2>
 
-    </div>
-    <div class="text_centered" style="font-size:16px;line-height:1.7em;margin-left:100px;margin-right:100px">
-        Производимые горки полностью безопасны, имеют прочные бортики. Мы устанавливаем пластиковые горки, либо
-        производим их из полированной нержавеющей стали, ламинированной фанеры или дибонда. Дибонд – это композитный
-        износостойкий материал. Он устойчив к морозам, осадкам, перепадам температур, что очень важно для продукции,
-        эксплуатируемой в Санкт-Петербурге.
-    </div>
+{'!preWrapper' | snippet : [
+'resources' => $_modx->resource.glav_best_ploshadki,
+'parents' => 0,
+'prepareSnippet' => 'addPlaceholders',
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
+'tpl' => 'dsmc.msProducts.row',
+'includeTVs' => 'prod_x_nalichie, prod_child_count',
+'limit' => 4,
+'sortby' => 'RAND()',
+'addPlaceholders' => [
+'colClass' => 'index_product_row_slider_item'
+],
+'wrapperPlaceholders' => [
+'section_style_bg' => 'bg-white',
+'title' => 'Лучшие проекты площадок',
+'description' => '<p>Производимые горки полностью безопасны, имеют прочные бортики. Мы устанавливаем пластиковые горки, либо производим их из полированной нержавеющей стали, ламинированной фанеры или дибонда. Дибонд – это композитный износостойкий материал. Он устойчив к морозам, осадкам, перепадам температур, что очень важно для продукции, эксплуатируемой в Санкт-Петербурге.</p>',
+'description_text_color' => 'text-mutted',
+'button_link_id' => 339,
+'button_link_text' => 'В каталог',
+'button_class' => 'btn-lg btn-warning'
+]
+]}
 
-
-    <div class="d-grid d-grid-slick grid-template-columns-lg-4">
-
-        {'!msProducts' | snippet : [
-        'resources' => $_modx->resource.glav_best_ploshadki,
-        'parents' => 0,
-        'prepareSnippet' => 'addPlaceholders',
-        'tpl' => 'dsmc.msProducts.row',
-        'includeTVs' => 'prod_x_nalichie, prod_child_count',
-        'limit' => 4,
-        'sortby' => 'RAND()',
-        'addPlaceholders' => [
-        'colClass' => 'index_product_row_slider_item'
-        ],
-        ]}
-
-    </div>
-
-
-    <a class="y_trigger see_all_button" href="{'339' | url}">В каталог</a>
-
-
-</div>
 <div class="index_banner_1">
     <a href="{'167' | url}"><img src="css/img/banner-KUB2.jpg" alt="детский комплекс КУБ"></a>
 </div>
-</div>
 
-
-<div class="container">
-    <div class="title_centered">
-        <h2>Надежные спортивные комплексы</h2>
-
-    </div>
-    <div class="text_centered" style="font-size:16px;line-height:1.7em;margin-left:100px;margin-right:100px">Мы создадим
-        многофункциональную интересную конструкцию из игровых компонентов, спортивных снарядов, которая станет уголком
-        развлечений для малышей и подростков. При необходимости мы дополним готовые проект набором нужных составляющих и
-        комплектующих. <strong>Цены на детские площадки</strong> для дачи и города начинаются <strong>от 30 000
-            рублей</strong>. Это на целых 40% меньше, чем у других компаний. При этом качество материалов на порядок
-        выше, ведь <strong>мы НЕ покупаем</strong> оборудование, детали, <strong>материалы в Китае!</strong>
-    </div>
-
-
-    <div class="d-grid d-grid-slick grid-template-columns-lg-4">
-
-        {'!msProducts' | snippet : [
-        'resources' => $_modx->resource.glav_nad_sport_complex,
-        'parents' => 340,
-        'tpl' => 'dsmc.msProducts.row',
-        'includeTVs' => 'prod_x_nalichie, prod_child_count',
-        'limit' => 4,
-        'sortby' => 'RAND()',
-        'prepareSnippet' => 'addPlaceholders',
-        'addPlaceholders' => [
-        'colClass' => 'index_product_row_slider_item'
-        ],
-        ]}
-
-    </div>
-
-
-    <a class="y_trigger see_all_button" href="{'340' | url}">Смотреть</a>
-
-    <div class="title_centered">
-        <h2>Тренажеры для спорта</h2>
-
-    </div>
-
-    <div class="d-grid d-grid-slick grid-template-columns-lg-4">
-
-        {'!msProducts' | snippet : [
-        'parents' => 52,
-        'tpl' => 'dsmc.msProducts.row',
-        'includeTVs' => 'prod_x_nalichie, prod_child_count',
-        'limit' => 4,
-        'sortby' => 'RAND()',
-        'prepareSnippet' => 'addPlaceholders',
-        'addPlaceholders' => [
-        'colClass' => 'index_product_row_slider_item'
-        ],
-        ]}
-    </div>
-
-
-    <a class="y_trigger see_all_button" href="{'52' | url}">Купить тренажер</a>
-
-    <div class="title_centered">
-        <h2>Для маломобильных детей</h2>
-
-    </div>
-
-    <div class="d-grid d-grid-slick grid-template-columns-lg-4">
-        {'!msProducts' | snippet : [
-        'parents' => 518,
-        'tpl' => 'dsmc.msProducts.row',
-        'includeTVs' => 'prod_x_nalichie, prod_child_count',
-        'limit' => 4,
-        'sortby' => 'RAND()',
-        'prepareSnippet' => 'addPlaceholders',
-        'addPlaceholders' => [
-        'colClass' => ''
-        ],
-        ]}
-    </div>
-
-
-    <a class="y_trigger see_all_button" href="{'518' | url}">Все предложения</a>
-
-
-</div>
-
+{'!preWrapper' | snippet : [
+'resources' => $_modx->resource.glav_nad_sport_complex,
+'parents' => 340,
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
+'tpl' => 'dsmc.msProducts.row',
+'includeTVs' => 'prod_x_nalichie, prod_child_count',
+'limit' => 4,
+'sortby' => 'RAND()',
+'prepareSnippet' => 'addPlaceholders',
+'addPlaceholders' => [
+'colClass' => 'index_product_row_slider_item'
+],
+'wrapperPlaceholders' => [
+'section_style_bg' => 'bg-white',
+'title' => 'Надежные спортивные комплексы',
+'description' => '<p>Мы создадим многофункциональную интересную конструкцию из игровых компонентов, спортивных снарядов, которая станет уголком развлечений для малышей и подростков. При необходимости мы дополним готовые проект набором нужных составляющих и комплектующих. <span class="font-weight-bold">Цены на детские площадки</span> для дачи и города начинаются <span class="font-weight-bold">от 30 000 рублей</span>. Это на целых 40% меньше, чем у других компаний. При этом качество материалов на порядок выше, ведь <span class="font-weight-bold">мы НЕ покупаем</span> оборудование, детали, <span class="font-weight-bold">материалы в Китае!</span></p>',
+'description_text_color' => 'text-mutted',
+'button_link_id' => 340,
+'button_link_text' => 'Смотреть',
+'button_class' => 'btn-lg btn-warning'
+]
+]}
+{'!preWrapper' | snippet : [
+'parents' => 52,
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
+'tpl' => 'dsmc.msProducts.row',
+'includeTVs' => 'prod_x_nalichie, prod_child_count',
+'limit' => 4,
+'sortby' => 'RAND()',
+'prepareSnippet' => 'addPlaceholders',
+'addPlaceholders' => [
+'colClass' => 'index_product_row_slider_item'
+],
+'wrapperPlaceholders' => [
+'section_style_bg' => 'bg-light',
+'title' => 'Тренажеры для спорта',
+'description' => '',
+'description_text_color' => '',
+'button_link_id' => 52,
+'button_link_text' => 'Купить тренажер',
+'button_class' => 'btn-lg btn-warning'
+]
+]}
+{'!preWrapper' | snippet : [
+'parents' => 518,
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
+'tpl' => 'dsmc.msProducts.row',
+'includeTVs' => 'prod_x_nalichie, prod_child_count',
+'limit' => 4,
+'sortby' => 'RAND()',
+'prepareSnippet' => 'addPlaceholders',
+'addPlaceholders' => [
+'colClass' => ''
+],
+'wrapperPlaceholders' => [
+'section_style_bg' => 'bg-white',
+'title' => 'Для маломобильных детей',
+'description' => '',
+'description_text_color' => '',
+'button_link_id' => 518,
+'button_link_text' => 'Все предложения',
+'button_class' => 'btn-lg btn-warning'
+]
+]}
 
 <div class="how_we_work_index" style="padding-bottom: 10px;">
     <div class="container">
@@ -561,9 +530,9 @@
         </div>
     </div>
 
-        {'!xBlocks' | snippet : [
-        'tpl' => 'dsmc.xBlocks.faq.row'
-        ]}
+    {'!xBlocks' | snippet : [
+    'tpl' => 'dsmc.xBlocks.faq.row'
+    ]}
 
     <div class="team_block_wrap">
         <div class="container">

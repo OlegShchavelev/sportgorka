@@ -319,7 +319,7 @@
 'parents' => 28,
 'where' => ['template:IN' => ['3','18']],
 'resources' => '-' ~ ('id' | resource),
-'tplWrapper' => 'dsmc.msProducts.wrapper.productcase',
+'tplWrapper' => 'dsmc.msProducts.wrapper.case',
 'includeTVs' => 'prod_x_nalichie, prod_child_count',
 'tpl' => 'dsmc.msProducts.row',
 'limit' => 4,
